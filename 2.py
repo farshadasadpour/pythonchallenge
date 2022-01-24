@@ -53,3 +53,6 @@ class Translator:
 
 sample = Translator(input_data)
 print(sample.translator())
+
+sample = Translator('map')
+print(sample.translator())
