@@ -37,5 +37,19 @@ input_data = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dm
 # print("".join(input_changed))
 
 # soulotion 2
-output = input_data.maketrans(alphabet)
-print(input_data.translate(output))
+# output = input_data.maketrans(alphabet)
+# print(input_data.translate(output))
+
+# soulotion 3 (class base)
+class Translator:
+    def __init__(self,data_input):
+        self.data_input = data_input
+    
+    def translator(self):
+        output = self.data_input.maketrans(alphabet)
+        self.data_input.translate(output)
+        return self.data_input.translate(output)
+
+
+sample = Translator(input_data)
+print(sample.translator())
