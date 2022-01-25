@@ -1235,3 +1235,5 @@ print("".join(magic_word))
 # solution 2
 rx = re.compile("[a-zA-Z]")
 print("".join(rx.findall(source)))
+
+# answer is equality

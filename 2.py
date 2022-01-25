@@ -56,3 +56,6 @@ print(sample.translator())
 
 sample = Translator('map')
 print(sample.translator())
+
+
+# answer is ocr
