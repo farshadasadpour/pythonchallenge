@@ -1,5 +1,3 @@
-from tkinter import N
-from tkinter.messagebox import NO
 import urllib3
 import re
 
@@ -27,12 +25,11 @@ class Service:
 base_url = "http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing="
 
 s = Service(base_url)
-# num = "12345"
-num = "16044"
+num = "8022"
+# num = "16044"
 while True:
-    # num = s._get_number(base_url+num)
-    # if num == None or num == "":
-    #     break
-    num = str(int(num)//2)
     num = s._get_number(base_url+num)
-
+    if num == None or num == "":
+        break
+    # num = str(int(num)//2)
+    # num = s._get_number(base_url+num)
