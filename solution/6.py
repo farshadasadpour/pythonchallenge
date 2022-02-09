@@ -10,7 +10,7 @@ next_number = re.findall(r"([0-9]+)",archive.read("90052.txt").decode())
 next_number="".join(next_number)+".txt"
 
 for item in range(len(archive.namelist())):
-    print(archive.read(next_number).decode())
+    # print(archive.read(next_number).decode())
     next_number = re.findall(r"([0-9]+)",archive.read(next_number).decode())
     if len(next_number) > 0:
         next_number="".join(next_number)+".txt"
