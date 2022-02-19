@@ -21,7 +21,7 @@ for item in range(len(archive.namelist())):
     else:
         print(archive.read(last_num).decode())
         break
-print(last_num)
+# print(last_num)
 print("".join(comment_list))
 
 
@@ -41,3 +41,5 @@ print("".join(comment_list))
 ****************************************************************
  **************************************************************
 """
+
+# answer is oxygen
