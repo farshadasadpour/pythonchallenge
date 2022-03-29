@@ -18,4 +18,4 @@ even.save('./files/even.jpg')
 odd.save('./files/odd.jpg')
 
 
-#answer is evil
+# answer is evil
