@@ -2,6 +2,7 @@
 from collections import Counter
 # s2
 import re
+
 source = """
 %%$@_$^__#)^)&!_+]!*@&^}@[@%]()%+$&[(_@%+%$*^@$^!+]!&_#)_*}{}}!}_]$[%}@[{_@#_^{*
 @##&{#&{&)*%(]{{([*}@[@&]+!!*{)!}{%+{))])[!^})+)$]#{*+^((@^@}$[**$&^{$!@#$%)!@(&
@@ -1227,8 +1228,8 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 # solution 1
 res = Counter(source)
 magic_word = list()
-for key,value in res.items():
-    if value <=1:
+for key, value in res.items():
+    if value <= 1:
         magic_word.append(key)
 print("".join(magic_word))
 

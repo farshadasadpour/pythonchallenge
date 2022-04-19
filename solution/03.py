@@ -1,4 +1,5 @@
 import re
+
 source = """
 kAewtloYgcFQaJNhHVGxXDiQmzjfcpYbzxlWrVcqsmUbCunkfxZWDZjUZMiGqhRRiUvGmYmvnJIHEmbT
 MUKLECKdCthezSYBpIElRnZugFAxDRtQPpyeCBgBfaRVvvguRXLvkAdLOeCKxsDUvBBCwdpMMWmuELeG
@@ -1252,7 +1253,7 @@ KfErkDaWMFZZeuqDmXKJEGHyToPUhPphfVhgUZgbIuRAtWnroImpJKqqmEZqeNQCKzhjIkKQHURWLXFw
 PBuijeoTSpsVLaOGuLVjMZXkBvVXwUuHfBihziiavGSYofPNeKsTXruMUumRRPQJzvSzJkKbtSipiqBd
 """
 
-rex = re.findall("[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]+",source)
+rex = re.findall("[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]+", source)
 print("".join(rex))
 
 # answer is linkedlist
